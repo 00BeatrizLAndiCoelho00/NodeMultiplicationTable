@@ -1,5 +1,7 @@
 
+
 const { multiplication } = require('./model/calculator');
+var multi = require('./model/calculator')
 
 var readline = require('readline');
 
@@ -80,17 +82,16 @@ dataInput.question('Please insert the smallest multiplication table\n' , functio
             
                 }else{
                     
-                    multi = multiplication(1,2);
-
+                    multi = multi.multiplication(10,20, 1, 7);
                      console.log(multi);
+                     dataInput.close()
 
                 }
              });
             }
         });
        }
-      });
-            
+      });      
     }
 });
 
