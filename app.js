@@ -85,7 +85,7 @@ dataInput.question('♡ Please insert the smallest multiplication table ♡\n' ,
             
                 }else{
                     
-                    multi = multi.multiplication(10, 20, 1, 7);
+                    multi = multi.multiplication(minimulMultiplicationTable, maximumMultiplicationTable, minimumMultiplier, maximumMultiplier);
                      console.log(multi);
                      dataInput.close()
 
