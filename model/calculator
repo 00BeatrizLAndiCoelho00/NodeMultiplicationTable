@@ -1,22 +1,25 @@
 
-const multiplication = function (multiplicandoMin, multiplicandoMax, multiplicadorMin ,multiplicadorMax){
+const multiplication = function (multiplyingMinimum, multiplyingMaximum, multiplierMinimum ,multiplierMaximum){
    
-    let minMultiplicando = multiplicandoMin
-    let maxMultiplicando = multiplicandoMax
-    let minMultiplicador = multiplicadorMin
-    let maxMultiplicador = multiplicadorMax
-    let contador
+    let minimumMultiplying  = multiplyingMinimum
+    let  maximumMultiplying = multiplyingMaximum
+    let minimumMultiplier = multiplierMinimum
+    let maximumMultiplier = multiplierMaximum
+    let counter
 
   
-  while (minMultiplicando <= maxMultiplicando) {
-        contador = minMultiplicador
-        while (contador <= maxMultiplicador) {
-            let resultado = minMultiplicando * contador
-            console.log(`${minMultiplicando} X ${contador} = ${resultado}`)
-            contador++
+  while (minimumMultiplying  <=  maximumMultiplying) {
+        counter = minimumMultiplier
+
+        while (counter <= maximumMultiplier) {
+            
+            let resultado = minimumMultiplying  *counter
+            //stars ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ 
+            console.log(`☆  ${minimumMultiplying } x ${counter} = ${resultado}  ☆`)
+            counter++
         }
-        minMultiplicando++
-        
+        minimumMultiplying ++
+        //return resultado
     }           
   
 }
